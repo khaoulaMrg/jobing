@@ -1,0 +1,8 @@
+.page-content {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    justify-content: space-between; /* Répartir les éléments de manière égale sur l'axe principal */
+    align-items: center; /* Centrer verticalement les éléments */
+    padding: 20px;
+    margin-top: 100px; /* Ajouter un espace autour du contenu */
+  }
+  

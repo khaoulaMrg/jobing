@@ -1,0 +1,58 @@
+.page-content {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    justify-content: space-between; /* Répartir les éléments de manière égale sur l'axe principal */
+    align-items: center; /* Centrer verticalement les éléments */
+    padding: 20px;
+    margin-top: 100px; /* Ajouter un espace autour du contenu */
+  }
+  
+  .title-container {
+    flex: 1; /* Fait en sorte que le conteneur du titre prenne tout l'espace restant */
+    margin-right: 20px; /* Marge à droite pour séparer le titre de l'image */
+  }
+  
+  .image {
+    width: 90%; /* Définir la largeur de l'image */
+    max-height: 80vh; /* Limiter la hauteur de l'image pour éviter le débordement */
+    margin-right: 50px; 
+    /* Marge à droite pour séparer l'image du titre */
+  }
+  
+  .image-container {
+    align-self: flex-end; /* Positionne l'image à droite de la page */
+  }
+  
+  .title {
+    font-size: 24px; /* Taille de la police du titre */
+    font-weight: bold; /* Mettre en gras le texte du titre */
+    margin-left: 20px; /* Marge à gauche pour séparer le titre de l'image */
+  }
+  /* Style pour le bouton Angular Material */
+a.mat-button {
+  color: white; /* Couleur du texte */
+  background-color: #1976d2; /* Couleur de fond */
+  padding: 10px 20px; /* Espacement intérieur du bouton */
+  border-radius: 5px; /* Bord arrondi */
+  text-decoration: none; /* Supprimer la soulignure du lien */
+  transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+/* Style pour le survol du bouton */
+a.mat-button:hover {
+  background-color: #1565c0; /* Couleur de fond au survol */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Espace entre la barre de recherche et le tableau */
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #0e93c0;
+}

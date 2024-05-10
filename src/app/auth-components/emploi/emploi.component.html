@@ -1,0 +1,48 @@
+
+
+
+<div class="con">
+  
+
+
+
+  <div class="center-panel">
+    <div class="search-bar">
+      <div class="input-group">
+        <span class="input-icon"><i class="fas fa-search fa-lg"></i></span>
+        <input type="text" id="title-search" placeholder="Rechercher par titre">
+      </div>
+      <div class="input-group">
+        <span class="input-icon"><i class="fas fa-map-marker-alt fa-lg"></i></span>
+        <input type="text" id="city-search" placeholder="Rechercher par ville">
+      </div>
+      <button onclick="search()">Rechercher</button>
+    </div>
+
+
+
+    <img    src="/assets/img/job-seeking.gif"   style="font-size: 2px;   width: 70px;  margin-left: 1200px; margin-top: 50px;">   
+
+  <div class="top">
+
+    <h2>Nos annonces par le Web Scraping</h2>
+    <p>Explorez les dernières opportunités d'emploi et de stage grâce à notre service de Web scraping.</p>
+
+  </div>
+
+
+  <div class="job-container">
+    <div class="job-card" *ngFor="let job of jobs">
+      <h2 style="font-size: 22px;">{{ job.Titre }}</h2>
+      <p>{{ job.Description }}</p>
+      <p style="color: blue; font-size: 20px;">Ville :</p><p> {{ job['Ville de l\'entreprise'] }}</p>
+      <p style="color: blue; font-size: 20px;">Date de publication : </p><p>{{ job['Date de publication'] }}</p>
+    </div>
+  </div>
+  
+  </div>
+
+
+
+
+</div>
